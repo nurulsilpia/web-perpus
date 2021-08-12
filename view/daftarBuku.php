@@ -64,7 +64,7 @@ include '../library/controller.php';
     </nav>
     <!-- PENUTUP NAVBAR -->
 
-    <div class="container mt-5">
+    <div class="container my-5">
       <div class="card" data-aos="zoom-in">
         <div class="card-header">
            <b>Daftar Buku</b>
