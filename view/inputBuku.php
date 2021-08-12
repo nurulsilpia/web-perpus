@@ -110,7 +110,7 @@ include '../library/controller.php';
                         <input type="text" name="penerbit" class="form-control" value="<?php echo @$edit['penerbit'] ?>" id="exampleFormControlInput1" placeholder="Masukan Nama Penerbit" required>
                     </div>
                     <div class="mb-3">
-                        <p class="text-capitalize text-danger opacity-50">Note: can not using special character</p>
+                        <p class="text-capitalize text-danger opacity-50">Note: can't using special character</p>
                     </div>
                     <?php if(@$_GET['id'] ==""){ ?>
                         <input type="submit" class="btn btn-primary"name="simpan" value="Simpan Data">
