@@ -4,7 +4,7 @@ include '../library/controller.php';
 
     $go = new controller();
     $tabel = "tbl_buku";
-    $redirect = "?menu=input_buku";
+    $redirect = "inputBuku.php";
     @$where = "id= $_GET[id]";
 
     if (isset($_POST['simpan'])) {
@@ -86,7 +86,7 @@ include '../library/controller.php';
     </nav>
     <!-- PENUTUP NAVBAR -->
 
-  <div class="container mt-5" id= "content" >
+  <div class="container my-5" id= "content" >
         <div class="card" data-aos="fade-down">
             <div class="card-header">
                 Form Input Buku
@@ -151,8 +151,8 @@ include '../library/controller.php';
                             <td><?php echo $r['judul']?></td>
                             <td><?php echo $r['pengarang']?></td>
                             <td><?php echo $r['penerbit']?></td>
-                            <td><a href="?menu=input_buku&edit&id=<?php echo $r['kode_buku']?>"><i class="bi bi-pen"></i></a></td>
-                            <td><a class="text-center" href="?menu=input_buku&hapus&id=<?php echo $r['kode_buku']?>" onclick="return confirm('Hapus Data?')"><i class="bi bi-trash text-center"></i></a></td>
+                            <td><a href="?menu=input_buku&edit&id=<?php echo $r['id']?>"><i class="bi bi-pen"></i></a></td>
+                            <td><a class="text-center" href="?menu=input_buku&hapus&id=<?php echo $r['id']?>" onclick="return confirm('Hapus Data?')"><i class="bi bi-trash text-center"></i></a></td>
                         </tr>
                         <?php } } ?>
                     </tbody>
@@ -172,12 +172,11 @@ include '../library/controller.php';
         AOS.init({
           delay:500
         });
-
-        // Data Table
+        
         $(document).ready(function() {
             $('#tableAll').DataTable();
         } );
-
+        
         // not allowed special character
         $('input').bind('input', function() {
             var c = this.selectionStart,
