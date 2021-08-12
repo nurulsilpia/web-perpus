@@ -76,7 +76,7 @@ include '../library/controller.php';
             <ul class="nav navbar-expand-lg justify-content-end ">
                 <li class="nav-item dropdown">
                 <li class="nav-right">
-                    <a class="nav-link btn btn-secondary" aria-current="page" href="index.php" style="color:white;"onclick="return confirm('Anda Yakin Ingin Keluar?')"><i class="bi bi-box-arrow-left"></i>  Logout</a>
+                    <a class="nav-link btn btn-secondary" aria-current="page" href="../index.php" style="color:white;"onclick="return confirm('Anda Yakin Ingin Keluar?')"><i class="bi bi-box-arrow-left"></i>  Logout</a>
                 </li>
                 </li>
             </ul>
